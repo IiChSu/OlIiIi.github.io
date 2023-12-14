@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<title>Käärijä</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		
+			<style>
+				.body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+			.profiili-container {
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-align:center;
+				margin: 0 auto;
+				width: 50%;
+			}
+			.column {
+				
+  				float: left;
+  				width: 33.33%;
+  				padding: 15px;
+				transition: flex 0.5s;
+				}
+
+			* {
+  				box-sizing: border-box;
+				}
+
+			.row::after {
+  				content: "";
+  				display: table;
+  				clear: both;
+				}
+
+			@media screen and (max-width:600px) {
+  				.container1, .container2{
+   				 width: 100%;
+				 flex-direction: column;
+  				}
+				}
+				
+
+			.container1 {
+    			display: grid;
+				grid-template-columns: repeat(2,1fr);
+				grid-gap: 60px;
+				margin-left: 40px;
+				margin-right:40px;
+				margin-top: 40px;
+				object-position: center;
+				}
+
+			.container2 {    
+ 				 display: grid;
+  				grid-template-columns: repeat(2,1fr);
+  				grid-gap: 40px;
+  				object-position: center;
+ 				margin-left: 40px;
+  				margin-right: 40px;
+  				margin-top: 40px;
+ 			    margin-bottom: 40px;
+				}
+				.container1, .container2 {
+  				display: flex;
+				justify-content: center;
+				}
+
+				@media screen and (max-width: 600px) {
+				.row .column {
+				width: 100%;
+				}
+				}
+
+				@media screen and (max-width: 600px) {
+  				.container2 .column2 {
+  			    width: 100%;
+                }
+                }
+				
+				@media (max-width: 600px) {
+    			.column {
+        		flex: 1 0 100%; /* Yksi sarake kerrallaan pienemmillä näytöillä */
+       			 margin-bottom: 20px; /* Lisää tilaa sarakkeiden välille */
+    			}
+				}
+
+			.column2 {
+  				float:left;
+  				width: 50%;
+  				padding: 15px;
+				transition: flex 0.5s;
+				border: 2px solid #ddd;
+				}
+				
+			table {
+           		width: 100%;
+           		border-collapse: collapse;
+				font-family: 'Montserrat Classic',  monospace;
+				background-color: rgba(255, 0, 136, 0.343);
+				background-image: ;
+				background-size: cover; /* Skaalaa taustakuvaa siten, että se täyttää taulukon */
+           		background-position: center;
+				color:white;
+				border-radius: 10px; /* Reunojen pyöristys */
+           		overflow: hidden; /* Piilottaa hohtavan varjon, joka ulottuu ulkopuolelle */
+				
+       		 }
+
+        	th, td {
+           		border: 2px solid rgb(254, 254, 254);
+           		padding: 8px;
+        		text-align: left;
+       		 }
+
+       		th {
+           		background-color: rgb(255, 0, 136)
+       		 }
+			table {
+            	box-shadow: 0px 0px 15px 5px rgb(255, 183, 221); /* Lisää hohtava varjo */
+        	}
+			</style>
+		
+	</head>
+	<body class="keskitetty-teksti" style="justify-content:center">
+		<div class="body">
+		
+	<div class="header">
+		<h1>KÄÄRIJÄ</h1>
+		</div>
+		<p></p>
+		<div class="navigointi">
+			<div class="header-text">
+			<!-- Tähän lisätään navigointielementit, kuten linkit -->
+			<nav>
+				<ul>
+					<li><a href="#">ETUSIVU</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/Loreen">LOREEN</a></li>
+					<!-- Lisää tarvittavat navigointilinkit -->
+				</ul>
+			</nav>
+			
+			
+
+		</div>
+	  </div>
+	
+	
+		
+	
+	
+	
+		<button onclick="setClass()">MITÄ MISSÄ MILLOIN</button>
+		<div class="profiili-container">
+		<div id="guid3" class="profiili">
+		<p></p>
+		<table>
+			<tr>
+				
+				
+			</tr>
+			<tr>
+				<td>NIMI:</td>
+				<td>Käärijä, oikealta nimeltään Jere Pöyhönen</td>
+			</tr>
+			<tr>
+				<td>SYNTYMÄAIKA:</td>
+				<td>1.10.1993</td>
+			</tr>
+			<tr>
+				<td>LEVY-YHTIÖT:</td>
+				<td>Monsp Records, Warner Music Finland</td>
+			</tr>
+			<tr>
+				<td>ENSIMMÄINEN (TUPLA) JULKAISU:</td>
+				<TD>Koppi tules & Nou problem</TD>
+			</tr>
+			<TR>
+				<TD>SUOSITUIMMAT SINGLET JA KUUNTELUKERRAT</TD>
+				<TD>Cha Cha Cha:119 milj., Viulunkieli: 7 milj., sekä Välikuolema: 6,2 milj.</TD>
+			</TR>
+			<!-- Lisää tarvittavat tiedot ja niiden kuvaukset riveille -->
+		</table>
+		</div>
+	</div>
+
+<div class="container1" >
+<div class="row" style="width: 90%;">
+<div class="column">
+
+			
+	<h2>EUROVIISUESITYS</h2>
+	
+  
+	<div class="image-container">
+		<img src="Käärijätausta1.png" alt="FKäärijätausta" style="width:100%;height:auto;">
+		<div class="overlay">
+			<p class="responsive-text">Käärijän Euroviisuesitys oli täynnä värikästä ilotulitusta, hulluttelua, sekä hyvällä maulla outoja koreografeja.©Sarah Louise Bennett/EBU </p>
+		</div>
+	</div>
+	
+  	
+
+</div>
+<div class="column">
+	
+
+	<h2>JERE</h2>
+	
+	<div class="image-container">
+	<img src="Kärtsäri.jpg" style="width:100%;height:auto;" alt="Käärijä">
+	<div class="overlay">
+		<p class="responsive-text" > Käärijä A.K.A Jere Pöyhönen. ©Corinne Cumming/EBU</p>
+		
+
+	</div>
+	</div>	
+
+</div>
+<div class="column">
+	<h2>TAUSTATANSSIJAT</h2>
+	<div class="image-container">
+	<img src="230507_Sarah Louise Bennett_EBU_3139.png" alt="Käärijä ja taustatanssijat" style="width:100%;height:auto;">
+	<div class="overlay">
+	<p class="responsive-text">Taustatanssijoina Pöyhösellä oli matkassa mukanaan Matti Myllyaho, Katri Mäkinen, Etel Röhr sekä Jesse Wijnans. ©Sarah Louise Bennett/EBU </p>
+	</div>
+	</div>
+	
+
+	</div>
+</div>
+</div>
+<div class="container2">
+
+	
+	<div class="column2" >
+		<h2>KÄÄRIJÄ-HUUMA</h2>
+		<p>Kun Käärijä voitti keväällä 2023 Suomen UMK-kilpailun kappaleellaan "Cha cha cha", nousi hän nopeasti koko kansan huulille vihreänä boleromiehenä. Kevään kuluessa ja Euroviisu -kilpailun lähetessä Käärijän sekä hänen kappaleensa suosio räjähtivät käsiin. Yhtäkkiä Käärijä oli joka paikassa. Joka puolelle ilmeistyi Käärijä -teemaisia muffinsseja, kakkuja, korvakoruja, ja sukkia. Kirkkaan vihreäkään ei ollut enää vihreä vaan "Käärijän vihreä". </p>
+			<p></p>
+			<p>Käärijä oli joka paikassa ja hänet haluttiin joka paikkaan. Myös "Cha cha cha" kiipesi pikavauhtia Spotify - ja radiosoittolistojen kärkeen ja nousi nopeasti Suomen kuunnelluimmaksi kappaleeksi, ja lopulta myös kaikkien aikojen kuunnelluimmaksi Suomalais -kappaleeksi koko maailmassa. Nousipa se myös hetkeksi koko maailman Top 50 -listan kärkeen. Kesällä 2023 Käärijän naama ikuistettiin myös erään kaupakeskuksen seinään muraaliksi.</p>
+	</div>
+		<div class="column2" >
+			<h2>liipa</h2>
+
+			’<iframe width="280" height="157,5" src="https://www.youtube.com/embed/l6rS8Dv5g-8?si=e9sDwlLmJ5cNChWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Käärijän esitys Euroviisuissa 13.5.2023" aria-describedby="kuvaus"></iframe>
+    <p>Käärijän esitys Euroviisuissa 13.5.2023</p>
+			</div>
+		</div>
+	
+	
+	
+
+
+
+
+
+
+
+
+<div class="footer">
+	<p class="fontti-1">@EUROVISION SONG CONTEST™ -FANPAGE</p>
+	<P class="fontti-1">All the rights of the images used on this page belong to <li><a href=https://eurovision.tv>EBU™</a></li></p>
+  </div>
+
+<br>
+<br>
+
+</div>
+<script>
+	function setClass() {
+var element = document.getElementById("guid3");
+element.classList.toggle("profiili");
+}
+</script>
+	</body>
+	
+</html>

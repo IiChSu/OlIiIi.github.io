@@ -1,0 +1,210 @@
+body {
+    background-image:linear-gradient(to bottom right, rgb(163, 216, 234),rgb(119, 167, 108));
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.keskitetty-teksti {
+    text-align: center;
+}
+content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family:'Montserrat Classic', monospace;
+    color: White;
+    font-size: 75px;
+    width:100%;
+    height:auto;
+    
+}
+
+h2 {
+    font-family: 'Montserrat Classic', monospace;
+    color: white; 
+    width:100%;
+    height:auto;
+}
+p {
+    font-family: 'Roboto', 'monospace';
+    color: white;
+    font-size:medium;
+    width:100%; 
+    height:auto;
+}
+
+#FEF900,#02035D,#0043FE,#FF0185
+
+
+.navigointi ul {
+    list-style: none;
+    padding: 10;
+    margin: 0;
+    text-align: center;
+}
+
+.navigointi ul li {
+    display: inline;
+    margin-right: 40px; 
+}
+
+
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* Muokataan linkkien väriä */
+a {
+    color:rgb(255, 0, 136); /* Asetetaan linkkien väriksi tummansininen */
+    font-family: 'Montserrat Classic', monospace;
+    text-decoration: none;
+}
+
+/* Muokataan käytyjen linkkien väriä */
+a:visited {
+    color: rgb(255, 0, 136) /* Asetetaan käytyjen linkkien väriksi tummanpunainen */
+}
+
+/* Muokataan linkkien värinä, kun hiiri on niiden päällä */
+a:hover {
+    color: rgb(255, 144, 203); /* Asetetaan linkkien väriksi musta, kun hiiri on päällä */
+}
+
+img {
+    border-radius: 50%; /* Tekee kuvasta pyöreän */
+    width: 350px; /* Aseta kuvalle leveys */
+    height: 350px; /* Aseta kuvalle korkeus */
+}
+
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .profiili {
+        display: none;
+    }
+    button {
+        font-family: 'Montserrat Classic', monospace;
+        height: auto;
+        font-size: large;
+        padding: 10px 20px; /* Määrittelee sisäiset tyhjät tilat */
+        background-color: #db34ca04; /* Taustaväri */
+        color: rgb(255, 0, 136); /* Tekstin väri */
+        border: none; /* Poistaa reunaviivat */
+        border-radius: 25px; /* Pyöristää reunat */
+        cursor: pointer; /* Vaihtaa kursorin muotoa osoittaessaan */
+        transition: background-color 0.3s ease; 
+        text-decoration: none;/* 
+        Lisää pehmeän animaation taustavärin muutokselle */
+      }
+      button:hover {
+        background-color: #ffffff7a; /* Uusi taustaväri hover-tilassa */
+      }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 96, 181, 0.401); /* Läpinäkyvä taustaväri */
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 2em;
+    }
+    
+    .image-container:hover .overlay {
+        opacity: 1; /* Näytä overlay hiiren ollessa kuvan päällä */
+    }
+    .overlay p {
+        Margin: 0;
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+       
+        height: 75px;
+        width: 100%;
+        
+        bottom: 0;
+        left: 0;
+        
+        opacity: 0.8;
+        background-image: linear-gradient(to bottom right, rgb(119, 167, 108),rgb(163, 216, 234),); /* Määrittele polku taustakuvaan */
+        background-size: cover; /* Venytä taustakuva koko footerin alueelle */
+        background-position: center; /* Aseta taustakuvan sijainti */
+        color: white; /* Tekstin väri footerissa */
+     /* Lisää halutessasi sisennystä */
+     /* Keskitä teksti */
+      }
+
+      .sisältö {
+        text-align: center;
+        padding: 10px;
+       margin-top: 15px;
+       margin-bottom: 15px;
+      }
+      
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+      .header-text {
+      font-size: 24px;
+      color: #333;
+      }
+
+      .responsive-text {
+        font-size: 1.5vw; /* vw (viewport width) skaalautuu ikkunan leveyden mukaan */
+        margin: 0;
+    }
+    .glowing-text {
+        text-shadow: 0 0 5px #fff, /* Lisää valkoinen hohto */
+                    0 0 10px #ff00e0, /* Lisää pinkki hohto */
+                    0 0 15px #ff00e0; /* Lisää vielä isompi pinkki hohto */
+    }
+    .fontti-1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:small;
+    width:100%; 
+    height:auto;
+    color:white
+}
+    
+    
